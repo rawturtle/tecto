@@ -1,0 +1,66 @@
+// Misc functions
+.unselectable(@cursor: default) {
+	cursor: @cursor;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.undraggable(@cursor: default) {
+	user-drag: none;
+	.unselectable(@cursor);
+}
+.cursor(@cursor: default) {
+	cursor: @cursor;
+}
+.appearance(@appearance) {
+	-webkit-appearance: @appearance;
+	-moz-appearance: @appearance;
+	appearance: @appearance;
+}
+.opacity(@opacity) {
+	opacity: @opacity;
+}
+.overflow(@horizontal: hidden, @vertical: hidden) {
+	overflow-x: @horizontal;
+	overflow-y: @vertical;
+}
+.box-sizing(@box-sizing) {
+	box-sizing: @box-sizing;
+}
+.resize(@resize) {
+	resize: @resize;
+}
+.object-fit(@fit){
+	object-fit: @fit;
+}
+.pointer-events(@events: auto) {
+	pointer-events: @events;
+}
+.hide-spinners() {
+	&::-webkit-inner-spin-button,
+	&::-webkit-outer-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+}
+.list-style-type(@a:none){
+	list-style-type: @a;
+}
+
+// Scrollbar styling
+.scrollbar(@foreground: @color-dark, @background: @color-light, @width: 8px, @radius: 0px) {
+	::-webkit-scrollbar {
+    width: @width;
+	}
+	::-webkit-scrollbar-track {
+			background: @background; 
+	}
+	::-webkit-scrollbar-thumb {
+			background: @foreground;
+			border-radius: @radius; 
+	}
+	::-webkit-scrollbar-thumb:hover {
+			background: darken(@foreground, 10%); 
+	}
+}

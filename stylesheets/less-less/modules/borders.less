@@ -1,0 +1,59 @@
+// Specific borders which can be applied
+.border-glow(@position, @size, @color, @index: 2, @set: outset) when (@position = top) {
+  .index(@index);
+  .box-shadow(@set, 0px, -@size, @size, -@size, @color);
+}
+.border-glow(@position, @size, @color, @index: 2, @set: outset) when (@position = bottom) {
+  .index(@index);
+  .box-shadow(@set, 0px, @size, @size, -@size, @color);
+}
+.border-glow(@position, @size, @color, @index: 2, @set: outset) when (@position = left) {
+  .index(@index);
+  .box-shadow(@set, -@size, 0px, @size, -@size, @color);
+}
+.border-glow(@position, @size, @color, @index: 2, @set: outset) when (@position = right) {
+  .index(@index);
+  .box-shadow(@set, @size, 0px, @size, -@size, @color);
+}
+
+// Specific functions which apply to borders
+.border(@border) {
+	border: @border;
+}
+.border(@size, @type, @color) {
+	border: @size @type @color;
+}
+.border(@position, @size, @type, @color) {
+	border-@{position}: @size @type @color;
+}
+.border-color(@color) {
+	border-color: @color;
+}
+.border-color(@position, @color) {
+	border-@{position}-color: @color;
+}
+.border-radius(@size) {
+	border-radius: @size;
+}
+.border-radius(@position, @size) {
+	border-@{position}-radius: @size;
+}
+
+// Specific functions which apply to box-shadow
+.box-shadow(@set, @horizontal, @vertical, @blur, @spread, @color, @merge: false) when (@merge = false) and (@set = inset) {
+	box-shadow: @horizontal @vertical @blur @spread @color inset;
+}
+.box-shadow(@set, @horizontal, @vertical, @blur, @spread, @color, @merge: false) when (@merge = false) and (@set = outset) {
+	box-shadow: @horizontal @vertical @blur @spread @color;
+}
+.box-shadow(@set, @horizontal, @vertical, @blur, @spread, @color, @merge) when (@merge = merge) and (@set = inset) {
+	box-shadow+: @horizontal @vertical @blur @spread @color inset;
+}
+.box-shadow(@set, @horizontal, @vertical, @blur, @spread, @color, @merge) when (@merge = merge) and (@set = outset) {
+	box-shadow+: @horizontal @vertical @blur @spread @color;
+}
+
+// Other border related styles
+.outline(@outline) {
+	outline: @outline;
+}

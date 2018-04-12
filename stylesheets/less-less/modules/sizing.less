@@ -1,0 +1,34 @@
+// Sizing functions
+
+.width(@width) when (@width = fit-content), (@width = min-content), (@width = max-content), (@width = stretch) {
+	@web: ~'-webkit-@{width}';
+	@moz: ~'-moz-@{width}';
+	width: @moz;
+	width: @web;
+	width: @width;
+}
+.width(@width) {
+	width: @width;
+}
+.height(@height) when (@height = fit-content), (@height = min-content), (@height = max-content), (@height = stretch) {
+	@web: ~'-webkit-@{height}';
+	@moz: ~'-moz-@{height}';
+	height: @moz;
+	height: @web;
+	height: @height;
+}
+.height(@height) {
+	height: @height;
+}
+.size(@width: 100%, @height: 100%) {
+	.width(@width);
+	.height(@height);
+}
+.min-size(@min-width: initial, @min-height: initial) {
+	min-width: @min-width;
+	min-height: @min-height;
+}
+.max-size(@max-width: initial, @max-height: initial) {
+	max-width: @max-width;
+	max-height: @max-height;
+}

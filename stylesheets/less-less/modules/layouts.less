@@ -1,0 +1,64 @@
+// Flexbox related
+.flex-box(@direction: row, @wrap: nowrap, @justify: flex-start, @item-align: stretch, @content-align: flex-start) {
+	.prefix(display, flex, @flex-prefixs);
+	.flex-flow(@direction, @wrap);
+	.justify-content(@justify);
+	.align-items(@item-align);
+	.align-content(@content-align);
+}
+.flex-box-center(@flow: row, @wrap: nowrap, @align-content: flex-start) {
+	.flex-box(@flow, @wrap, center, center, @align-content);
+}
+.flex-flow(@direction: row, @wrap: nowrap) {
+	.prefix(flex-flow, @direction @wrap, @flex-prefixs);
+}
+.flex-size(@size){
+	.prefix(flex, @size, @flex-prefixs);
+}
+.flex-wrap(@wrap) {
+	.prefix(flex-wrap, @wrap, @flex-prefixs);
+}
+.flex-item(@grow: 0, @shrink: 0, @basis: 100%) {
+	.prefix(flex, @grow @shrink @basis, @flex-prefixs);
+}
+.flex-order(@index) {
+	.prefix(order, @index, @flex-prefixs);
+}
+.flex-direction(@direction) {
+	.prefix(flex-direction, @direction, @flex-prefixs);
+}
+.flex-align(@alignment){
+	.prefix(align-self, @alignment, @flex-prefixs);
+}
+.align-content(@alignment) {
+	.prefix(align-content, @alignment, @flex-prefixs);
+}
+.align-items(@alignment) {
+	.prefix(align-items, @alignment, @flex-prefixs);
+}
+.justify-content(@justify) {
+	.prefix(justify-content, @justify, @flex-prefixs);
+}
+.flex-basis(@basis){
+	.prefix(flex-basis, @basis, @flex-prefixs);
+}
+
+// Other layouts
+.display(@display, @horizontal-position: center, @vertical-position: middle) {
+	display: @display;
+	text-align: @horizontal-position;
+	vertical-align: @vertical-position;
+}
+.inline-block(@horizontal-position: center, @vertical-position: middle) {
+	display: inline-block;
+	text-align: @horizontal-position;
+	vertical-align: @vertical-position;
+}
+.block(@horizontal-position: center, @vertical-position: middle) {
+	display: block;
+	text-align: @horizontal-position;
+	vertical-align: @vertical-position;
+}
+.hidden() {
+	display: none;
+}

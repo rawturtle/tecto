@@ -1,0 +1,218 @@
+// Color Tones
+@color-dark: #292D38;
+@color-medium: #E0E0E0;
+@color-light: #FFFFFF;
+
+// Color sets
+@color-yellow: #FDD835;
+@color-pink: #D81B60;
+@color-blue: #039BE5;
+@color-green: #7CB342;
+@color-red: #F4511E;
+@color-orange: #FB8C00;
+@color-purple: #8E24AA;
+@color-cyan: #00BCD4;
+@color-lime: #CDDC39;
+@color-amber: #FFC107;
+@color-brown: #795548;
+@color-grey: #7C7C7C;
+
+// Colors pair
+@color-primary: @color-dark;
+@color-secondary: @color-grey;
+
+// Color levels
+@color-success: @color-green;
+@color-warning: @color-orange;
+@color-error: @color-red;
+
+// Color Specifics
+@color-button-text: @color-primary;
+@color-button-background: @color-light;
+@color-background: @color-primary;
+
+// Breakpoints
+@breakpoint-tablet: 1080px;
+@breakpoint-mobile: 760px;
+
+// Page Sizing
+@page-gutter: 20px;
+
+// Spacings & Paddings
+@padding-base: 0.25em;
+@spacing-base: 0.25em;
+
+// Container Sizing
+@container-gutter: 20px;
+@container-content-width: 760px;
+
+// Fonts
+@font-primary: 'Montserrat';
+@font-secondary: @font-primary;
+
+// Heading Large (h1)
+@heading-large-size: 2.4em;
+@heading-large-weight: 500;
+@heading-large-font: @font-primary;
+@heading-large-color: @color-light;
+
+// Heading Medium (h2)
+@heading-medium-size: 1.6em;
+@heading-medium-weight: 500;
+@heading-medium-font: @font-primary;
+@heading-medium-color: @color-light;
+
+// Heading Small (h3)
+@heading-small-size: 1.2em;
+@heading-small-weight: 500;
+@heading-small-font: @font-primary;
+@heading-small-color: @color-light;
+
+// Text (p, .text)
+@text-size: 1em;
+@text-weight: 400;
+@text-font: @font-primary;
+@text-color: @color-light;
+
+// Small text (p.small, .text.small)
+@text-small-size: 0.8em;
+@text-small-weight: 400;
+@text-small-font: @font-primary;
+@text-small-color: @text-color;
+
+// Button (button, .button)
+@button-width: auto;
+@button-height: 40px;
+@button-max-width: 90%;
+@button-min-width: 130px;
+@button-padding-x: 10px;
+@button-padding-y: 5px;
+@button-margin-x: auto;
+@button-margin-y: 10px;
+@button-border-radius: 5px;
+@button-border-size: 2px;
+@button-border-color: darken(@button-background-color, 10%);
+@button-text-size: 1em;
+@button-text-weight: 500;
+@button-text-height: @button-height;
+@button-text-font: @font-primary;
+@button-text-color: @color-primary;
+@button-text-spacing: normal;
+@button-text-transform: uppercase;
+@button-background-color: @color-light;
+
+// Button small (button.small, .button.small)
+@button-small-width: 80px;
+@button-small-height: 25px;
+@button-small-max-width: 90px;
+@button-small-border-radius: 5px;
+@button-small-border-size: 2px;
+@button-small-border-color: darken(@button-small-background-color, 10%);
+@button-small-text-size: 0.8em;
+@button-small-text-weight: 400;
+@button-small-text-height: @button-small-height;
+@button-small-text-font: @button-text-font;
+@button-small-text-color: @button-text-color;
+@button-small-background-color: @button-background-color;
+
+// Input (input)
+@input-width: 100%;
+@input-height: 30px;
+@input-max-width: 300px;
+@input-placeholder-text-color: @color-grey;
+@input-placeholder-text-transform: uppercase;
+@input-padding-x: 10px;
+@input-padding-y: 5px;
+@input-margin-x: auto;
+@input-margin-y: 10px;
+@input-border-size: 2px;
+@input-border-style: solid;
+@input-border-color: darken(@input-background-color, 10%);
+@input-border-radius: 5px;
+@input-text-size: 1em;
+@input-text-weight: 400;
+@input-text-height: 1.2em;
+@input-text-font: @font-primary;
+@input-text-color: @color-dark;
+@input-text-spacing: normal;
+@input-text-transform: none;
+@input-background-color: @color-light;
+
+// Textarea (textarea)
+@textarea-width: 100%;
+@textarea-height: 30px;
+@textarea-max-width: 450px;
+@textarea-placeholder-text-color: @color-grey;
+@textarea-placeholder-text-transform: uppercase;
+@textarea-padding-x: 10px;
+@textarea-padding-y: 5px;
+@textarea-margin-x: auto;
+@textarea-margin-y: 10px;
+@textarea-border-size: 2px;
+@textarea-border-style: solid;
+@textarea-border-color: darken(@textarea-background-color, 10%);
+@textarea-border-radius: 5px;
+@textarea-text-size: 1em;
+@textarea-text-weight: 400;
+@textarea-text-height: 1.2em;
+@textarea-text-font: @font-primary;
+@textarea-text-color: @color-dark;
+@textarea-text-spacing: normal;
+@textarea-text-transform: none;
+@textarea-background-color: @color-light;
+
+// Checkbox (input[type=checkbox])
+@checkbox-width: 16px;
+@checkbox-height: 16px;
+@checkbox-margin-right: 10px;
+@checkbox-border-style: solid;
+@checkbox-border-size: 2px;
+@checkbox-border-radius: 5px;
+@checkbox-border-color: darken(@checkbox-background-color, 10%);
+@checkbox-background-color: @color-light;
+
+// Link (a, .link)
+@link-text-size: 1em;
+@link-text-weight: 400;
+@link-text-height: 1.2em;
+@link-text-font: @font-primary;
+@link-text-color: @color-dark;
+@link-text-spacing: normal;
+@link-text-transform: none;
+
+// Card (.card)
+@card-width: 100%;
+@card-height: auto;
+@card-max-width: 300px;
+@card-max-height: 200px;
+@card-padding: 5px;
+@card-border-style: solid;
+@card-border-size: 2px;
+@card-border-radius: 5px;
+@card-border-color: @color-pink;
+@card-background-color: @color-light;
+@card-image-width: 100%;
+@card-image-height: auto;
+@card-image-max-width: 150px;
+@card-image-max-height: auto;
+
+// Navigation (.navigation)
+@navigation-height: 70px;
+@navigation-mobile-height: 60px;
+@navigation-primary-height: 35px;
+@navigation-primary-background-color: @color-light;
+@navigation-primary-text-color: @color-dark;
+@navigation-secondary-height: 35px;
+@navigation-secondary-background-color: @color-light;
+@navigation-secondary-text-color: @color-dark;
+@navigation-link-size: 14px;
+@navigation-link-weight: 500;
+@navigation-link-height: 35px;
+@navigation-link-font: @font-primary;
+@navigation-link-color: @color-light;
+@navigation-link-spacing: normal;
+@navigation-link-transform: uppercase;
+@navigation-link-padding-x: 20px;
+@navigation-link-padding-y: 0;
+@navigation-border-size: 5px;
+@navigation-border-color: @color-dark;

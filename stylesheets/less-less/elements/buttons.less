@@ -1,0 +1,49 @@
+// Styles for buttons
+button, .button {
+  .display(block);
+  .size(@button-width, @button-height);
+  .min-size(@button-min-width);
+  .max-size(@button-max-width);
+  .font(@button-text-weight, @button-text-size, @button-text-font, @button-text-color, @button-text-height, @button-text-spacing, @button-text-transform);
+  .padding(@button-padding-x, @button-padding-y);
+  .margin(@button-margin-x, @button-margin-y);
+  .background-color(@button-background-color);
+  .box-sizing(border-box);
+  .padding(6px, 1px);
+  .outline(none);
+  .border(none);
+  .text-decoration(none);
+  .cursor(pointer);
+  &:hover {
+    .background-color(darken(@button-background-color, 10%));
+  }
+  &.bd {
+    .border(@button-border-size, solid, @button-border-color);
+    .border-radius(@button-border-radius);
+  }
+  &.bs {
+    .border-glow(bottom, @button-border-size, @button-border-color);
+  }
+  &.small {
+    .size(@button-small-width, @button-small-height);
+    .max-size(@button-small-max-width);
+    .font(@button-small-text-weight, @button-small-text-size, @button-small-text-font, @button-small-text-color, @button-small-text-height);    
+    .background-color(@button-small-background-color);
+    &.bd {
+      .border(@button-small-border-size, solid, @button-small-border-color);
+      .border-radius(@button-small-border-radius);
+    }
+    &.bs {
+      .border-glow(bottom, @button-small-border-size, @button-small-border-color);
+    }
+    &:hover {
+      .background-color(darken(@button-small-background-color, 10%));
+    }
+  }
+}
+
+a, .link {
+  .color(@link-text-color);
+  .font(@link-text-weight, @link-text-size, @link-text-font, @link-text-color, @link-text-height, @link-text-spacing, @link-text-transform);
+  .text-decoration(none);
+}

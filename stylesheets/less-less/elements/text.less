@@ -1,0 +1,21 @@
+// Define the styles for text areas
+
+h1 {
+  .font(@heading-large-weight, @heading-large-size, @heading-large-font, @heading-large-color);
+}
+
+h2 {
+	.font(@heading-medium-weight, @heading-medium-size, @heading-medium-font, @heading-medium-color);
+}
+
+h3 {
+  .font(@heading-small-weight, @heading-small-size, @heading-small-font, @heading-small-color);
+}
+
+p, label, .text {
+  .font(@text-weight, @text-size, @text-font, @text-color);
+  &.small {
+    .font(@text-small-weight, @text-small-size, @text-small-font, @text-small-color);
+  }
+}
+

@@ -1,0 +1,35 @@
+// Define the styles for a navigation bar
+.navigation {
+  .size(100%, auto);
+  // .size(100%, @navigation-height);
+}
+
+// Define specific classes to apply certain styles for a navigation bar
+.navigation {
+  &.fixed {
+    .position(fixed);
+  }
+  &.bd {
+    .border(bottom, @navigation-border-size, solid, @navigation-border-color);
+  }
+  &.bs {
+    .border-glow(bottom, @navigation-border-size, @navigation-border-color);
+  }
+  .primary {
+    .size(100%, @navigation-primary-height);
+    .background-repeat(repeat-x);
+    .background-position(auto);
+    .background-color(@navigation-primary-background-color);
+    .color(@navigation-primary-text-color);
+  }
+  .secondary {
+    .size(100%, @navigation-secondary-height);
+    .background-color(@navigation-secondary-background-color);
+    .color(@navigation-secondary-text-color);
+    a {
+      .font(@navigation-link-weight, @navigation-link-size, @navigation-link-font, @navigation-link-color, @navigation-link-height, @navigation-link-spacing, @navigation-link-transform);
+      .padding(@navigation-link-padding-x, @navigation-link-padding-y);
+      .text-decoration(none);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+// Core prefixs
+@core-prefixs: webkit, moz, ms;
+
+// Specific prefixs
+@flex-prefixs: @core-prefixs;
+@transform-prefixs: @core-prefixs;
+
+// Functions for prefixing
+.prefix(@variable, @value, @prefixs) {
+	.for(@prefixs, {
+		-@{key}-@{variable}: @value;
+	});
+	@{variable}: @value;
+}
+
+
+.for(@list, @code) {
+	& {
+		.loop(@i: 1) when (@i =< length(@list)) {
+				@key: extract(@list, @i);
+				@code();
+				.loop(@i + 1);
+			}
+		.loop();
+	}
+}
+

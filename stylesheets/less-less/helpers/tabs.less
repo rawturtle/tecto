@@ -1,0 +1,35 @@
+// Functionality for turning views into swipeable tabs when in mobile and tablet views
+
+@media screen and (max-width: @breakpoint-tablet) {
+	.tb\:tabs {
+		.tb\:tab {
+			.display(none);
+		}
+		.tb\:tab.active {
+			.display(flex);
+			&.sl {
+				.animation(swipe-left, 400ms);
+			}
+			&.sr {
+				.animation(swipe-right, 400ms);
+			}
+		}
+  }
+}
+
+@media screen and (max-width: @breakpoint-mobile) {
+	.mb\:tabs {
+		.mb\:tab {
+			.display(none);
+		}
+		.mb\:tab.active {
+			.display(flex);
+			&.sl {
+				.animation(swipe-left, 400ms);
+			}
+			&.sr {
+				.animation(swipe-right, 400ms);
+			}
+		}
+  }
+}

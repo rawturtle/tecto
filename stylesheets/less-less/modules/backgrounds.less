@@ -1,0 +1,78 @@
+.background-color(@color) {
+	background-color: @color;
+}
+
+.background-cover(@image, @size: cover, @horizontal-position: 50%, @vertical-position: 50%, @repeat: no-repeat) {
+	background-image: url(@image);
+	background-size: @size;
+	background-position: @horizontal-position @vertical-position;
+	background-repeat: @repeat;
+}
+
+.background-image(@image, @width: auto, @height: auto, @horizontal-position: 50%, @vertical-position: 50%, @repeat: no-repeat) {
+	background-image: url(@image);
+	background-size: @width @height;
+	background-position: @horizontal-position @vertical-position;
+	background-repeat: @repeat;
+}
+
+.background-position(@position) {
+	background-position: @position;
+}
+
+.background-position(@horizontal, @vertical) {
+	background-position: @horizontal @vertical;
+}
+
+.background-size(@size) {
+	background-size: @size;
+}
+
+.background-size(@width, @height) {
+	background-size: @width @height;
+}
+
+.background-repeat(@repeat) {
+	background-repeat: @repeat;
+}
+
+.background-repeat(@horizontal, @vertical) {
+	background-repeat: @horizontal, @vertical;
+}
+
+.background-gradient (@start, @finish) {
+	background-color: @start;
+	background: -webkit-gradient(linear, left top, left bottom, from(@start), to(@finish));
+	background: -webkit-linear-gradient(top, @start, @finish);
+	background: -moz-linear-gradient(top, @start, @finish);
+	background: -ms-linear-gradient(top, @start, @finish);
+	background: -o-linear-gradient(top, @start, @finish);
+	background: linear-gradient(@start, @finish);
+}
+
+.background-img-gradient(@degree, @hash1, @percent1, @hash2, @percent2, @imgURL) {
+	background: linear-gradient(@degree, @hash1, @percent1, @hash2, @percent2),
+		url(@imgURL) no-repeat center;
+	background-size: cover;
+}
+
+.background-img-overlay(@red, @green, @blue, @alpha, @imgURL) {
+	background: linear-gradient(
+					rgba(@red, @green, @blue, @alpha),
+					rgba(@red, @green, @blue, @alpha)
+	), url(@imgURL) no-repeat center;
+	background-size: cover;
+}
+
+.background-img-overlay-multiple(@degree, @per1, @per2 ,@red1, @green1, @blue1,
+								@alpha1, @red2, @green2, @blue2, @alpha2, @imgURL) {
+	background: linear-gradient(@degree,
+					rgba(@red1, @green1, @blue1, @alpha1) @per1,
+					rgba(@red2, @green2, @blue2, @alpha2) @per2
+	), url(@imgURL) no-repeat center;
+	background-size: cover;
+}
+
+.background-clip(@box) {
+	background-clip: @box;
+}

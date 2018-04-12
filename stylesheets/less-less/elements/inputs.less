@@ -1,0 +1,68 @@
+input, select {
+  .size(@input-width, @input-height);
+  .max-size(@input-max-width);
+  .placeholder(color, @input-placeholder-text-color);
+  .placeholder(text-transform, @input-placeholder-text-transform);
+  .font(@input-text-weight, @input-text-size, @input-text-font, @input-text-color, @input-text-height, @input-text-spacing, @input-text-transform);
+  .padding(@input-padding-x, @input-padding-y);
+  .margin(@input-margin-x, @input-margin-y);
+  .background-color(@input-background-color);
+  .box-sizing(content-box);
+  .border(none);
+  .outline(none);
+  &.bd\:all {
+    .border(@input-border-size, @input-border-style, @input-border-color);
+    .border-radius(@input-border-radius);
+  }
+}
+
+textarea {
+  .size(@textarea-width, @textarea-height);
+  .max-size(@textarea-max-width);
+  .background-color(@textarea-background-color);
+  .placeholder(color, @textarea-placeholder-text-color);
+  .placeholder(text-transform, @input-placeholder-text-transform);
+  .font(@textarea-text-weight, @textarea-text-size, @textarea-text-font, @textarea-text-color, @textarea-text-height, @textarea-text-spacing, @textarea-text-transform);
+  .padding(@textarea-padding-x, @textarea-padding-y);
+  .margin(@textarea-margin-x, @textarea-margin-y);
+  .box-sizing(content-box);
+  .border(none);
+  .outline(none);
+  .resize(none);
+  .overflow();
+  &.bd\:all {
+    .border(@textarea-border-size, @textarea-border-style, @textarea-border-color);
+    .border-radius(@textarea-border-radius);
+  }
+}
+
+input[type=checkbox] {
+  .position(absolute);
+  .opacity(0);
+  & + label {
+    .position(relative);
+    .padding(0);
+    .cursor(pointer);
+    &:before {
+      .display(inline-block);
+      .size(@checkbox-width, @checkbox-height);
+      .margin(right, @checkbox-margin-right);
+      .content('');
+      .background-color(@color-light);
+      .border(@checkbox-border-size @checkbox-border-style @checkbox-border-color);
+      .border-radius(@checkbox-border-radius);
+    }  
+  }
+  // Hover
+  &:hover + label:before {
+    
+  }
+  // Focus
+  &:focus + label:before {
+    //box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+  // Checked
+  &:checked + label:before {
+    .content('✔');
+  }
+}

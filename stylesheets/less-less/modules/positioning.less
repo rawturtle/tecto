@@ -1,0 +1,60 @@
+// Positioning functions
+
+// Position
+.position(@position) {
+	position: @position;
+}
+.position(@prop, @value) {
+	@{prop}: @value;
+}
+.position-center(@position: absolute) {
+	.position(@position);
+	.position(left, 50%);
+	.position(top, 50%);
+	.translate();
+}
+
+// Padding
+.padding(@size) {
+	padding: @size;
+}
+.padding(@edge, @size) when (@edge = top), (@edge = left), (@edge = bottom), (@edge = right) {
+	padding-@{edge}: @size;
+}
+.padding(@horizontal, @vertical) when (not (@horizontal = top) and not (@horizontal = left) and not (@horizontal = bottom) and not (@horizontal = right)) {
+	padding: @vertical @horizontal;
+}
+.padding(@top, @left, @bottom, @right) {
+	padding: @top @left @bottom @right;
+}
+
+// Margins
+
+.margin(@size) {
+	margin: @size;
+}
+.margin(@edge, @size) when (@edge = top), (@edge = left), (@edge = bottom), (@edge = right) {
+	margin-@{edge}: @size;
+}
+.margin(@horizontal, @vertical) when (not (@horizontal = top) and not (@horizontal = left) and not (@horizontal = bottom) and not (@horizontal = right)) {
+	margin: @vertical @horizontal;
+}
+.margin(@top, @left, @bottom, @right) {
+	margin: @top @left @bottom @right;
+}
+
+// Text alignment
+.ta\:left {
+  .text-align(left);
+}
+.ta\:right {
+  .text-align(right);
+}
+.ta\:center {
+  .text-align(center);
+}
+
+// Misc
+.index(@index) {
+	z-index: @index;
+}

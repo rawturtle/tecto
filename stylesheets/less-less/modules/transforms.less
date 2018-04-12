@@ -1,0 +1,13 @@
+// Functions related to transforms
+.rotate(@degrees) {
+	.prefix(transform, rotate(@degrees), @transform-prefixs);
+}
+.scale(@horizontal, @vertical) {
+	.prefix(transform, scale(@horizontal, @vertical), @transform-prefixs);
+}
+.transform-origin(@horizontal, @vertical) {
+	.prefix(transform-origin, @horizontal @vertical, @transform-prefixs);
+}
+.translate(@horizontal: -50%, @vertical: -50%) {
+	.prefix(transform, translate(@horizontal, @vertical), @transform-prefixs);
+}

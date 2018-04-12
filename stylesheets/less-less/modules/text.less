@@ -1,0 +1,99 @@
+// Functions related to text and fonts
+.font(@weight, @size, @font, @color) {
+	@line-height: (@size * 1.2);
+	font: @weight @size/@line-height @font;
+	color: @color;
+}
+.font(@weight, @size, @font, @color, @line-height, @letter-spacing: normal, @text-transform: none) {
+	font: @weight @size/@line-height @font;
+	text-transform: @text-transform;
+	letter-spacing: @letter-spacing;
+	color: @color;
+}
+.font-style(@style) {
+	font-style: @style;
+}
+.font-size(@size) {
+	font-size: @size;
+}
+.font-weight(@weight) {
+	font-weight: @weight;
+}
+.font-family(@family) {
+	font-family: @family;
+}
+.line-height(@height) {
+	line-height: @height;
+}
+.text-align(@center) {
+	text-align: @center;
+}
+.text-transform(@transform) {
+	text-transform: @transform;
+}
+.text-decoration(@decoration) {
+	text-decoration: @decoration;
+}
+.text-overflow(@overflow) {
+	text-overflow: @overflow;
+}
+.content(@content: '') {
+	content: @content;
+}
+.wrap-on-overflow() {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+.ellipses-on-overflow() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.white-space(@whitespace) {
+  white-space: @whitespace;
+}
+.color(@color) {
+	color: @color;
+}
+
+// Placeholder
+.placeholder-color(@color) {
+	&::placeholder {
+		color: @color;
+	}
+	&::-webkit-input-placeholder {
+		color: @color;
+	}
+	&::-moz-placeholder {
+		color: @color;
+	}
+	&:-ms-input-placeholder {
+		color: @color;
+	}
+	&:-moz-placeholder {
+		color: @color;
+	}
+}
+.placeholder(@variable, @value) {
+	&::placeholder {
+		@{variable}: @value;
+	}
+	&::-webkit-input-placeholder {
+		@{variable}: @value;
+	}
+	&::-moz-input-placeholder {
+		@{variable}: @value;
+	}
+	&:-ms-input-placeholder {
+		@{variable}: @value;
+	}
+	&:-moz-input-placeholder {
+		@{variable}: @value;
+	}
+}

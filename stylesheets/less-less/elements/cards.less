@@ -1,0 +1,14 @@
+.card {
+  .size(@card-width, @card-height);
+  .max-size(@card-max-width, @card-max-height);
+  .padding(@card-padding);
+  .box-sizing(border-box);
+  .box-shadow(set, 0, 0.25em, 0.125em, 0, rgba(0,0,0,0.1));
+  // .border(@card-border-size @card-border-style @card-border-color);
+  .border-radius(@card-border-radius);
+  .background-color(@card-background-color);
+  img {
+    .size(@card-image-width, @card-image-height);
+    .max-size(@card-image-max-width, @card-image-max-height);
+  }
+}
