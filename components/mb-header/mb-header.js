@@ -1,4 +1,4 @@
-import template from './mobile-header.vue'
+import template from './mb-header.vue'
 
 const mobileHeader = {
   name: 'mobile-header',

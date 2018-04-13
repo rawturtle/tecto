@@ -3,13 +3,13 @@
         <section class="ct:hori cs:fwh mb:ct:vert" id="innov8-mobile">
             <mobile-header class="cs:fw component"></mobile-header>
                 <transition-group
-                        id="square-container"
-                        name="square-animation"
+                        id="nav-menu"
+                        name="mb-animation"
                         v-bind:css="false"
                         v-on:enter="enter"
                         tag="section"
                         class="ct:hori cs:fwh mb:ct:vert component">
-                    <square v-for="square in squares" :key="square.id" :square="square"></square>
+                    <nav-item v-for="item in navMenu" :key="item.id" :navItem="item"></nav-item>
                 </transition-group>
         </section>
     </section>
