@@ -18,13 +18,6 @@ const square = {
     },
 
   },
-  mounted: function () {
-    //console.log("start timeout: " + this.square.id + ": "+ Math.floor(Date.now() / 1000));
-    //setTimeout( () => this.move(), this.square.delay);
-    //console.log("end timeout: " + this.square.id + ": "+ Math.floor(Date.now() / 1000));
-
-
-  },
   // extend the template file
   ...template
 };

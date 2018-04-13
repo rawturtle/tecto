@@ -1,3 +1,10 @@
+#innov8-mobile {
+  display: none;
+  @media screen and (max-width: @breakpoint-mobile){
+    display: flex;
+  }
+}
+
 .component.square {
   text-align: center;
   height: 250px;
@@ -14,7 +21,10 @@
 
   }
 }
-.square-list-move {
+.component#square-container {
+  overflow: hidden;
+}
+.square-animation-move {
   transition: transform 1s;
 }
 
