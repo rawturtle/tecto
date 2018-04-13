@@ -1,6 +1,7 @@
 <template>
     <section class="view home">
-        <section class="ct:hori cs:fwh mb:ct:vert" id="innov8-mobile">
+        <!--<mobile-entry></mobile-entry>-->
+        <section class="cs:fwh mb:ct:vert" id="innov8-mobile">
             <mobile-header class="cs:fw component"></mobile-header>
                 <transition-group
                         id="nav-menu"
@@ -8,7 +9,7 @@
                         v-bind:css="false"
                         v-on:enter="enter"
                         tag="section"
-                        class="ct:hori cs:fwh mb:ct:vert component">
+                        class="mb:cs:fwh mb:ct:vert component">
                     <nav-item v-for="item in navMenu" :key="item.id" :navItem="item"></nav-item>
                 </transition-group>
         </section>
