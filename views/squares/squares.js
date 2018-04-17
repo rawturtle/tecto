@@ -1,6 +1,7 @@
 import template from './squares.vue';
 import { mbNavMenu } from '../../components/';
 import { mbHeader } from '../../components/';
+import { homePage } from '../../components/'
 import anime from 'animejs'
 
 const squares = {
@@ -15,7 +16,7 @@ const squares = {
   },
   components: {
     'mobile-entry': mbNavMenu,
-    'mb-header': mbHeader
+    'home-page': homePage
   },
   ...template
 }
