@@ -999,6 +999,9 @@ section.application {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
+.cv\:hide {
+  display: none;
+}
 .cs\:gutter {
   width: 20px;
   height: 20px;
@@ -2519,14 +2522,6 @@ body ::-webkit-scrollbar-thumb:hover {
 *[haiku-id="63d391c7f315"],
 *[haiku-id="56b9c214aa43"] {
   fill: #292D38;
-}
-#innov8-mobile {
-  display: none;
-}
-@media screen and (max-width: 760px) {
-  #innov8-mobile {
-    display: flex;
-  }
 }
 .component.item {
   text-align: center;

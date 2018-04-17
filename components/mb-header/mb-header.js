@@ -1,10 +1,10 @@
 import template from './mb-header.vue'
 
-const mobileHeader = {
+const mbHeader = {
   name: 'mobile-header',
   ...template
 };
 
 // Export as default for lazy-loading
-export default mobileHeader;
+export default mbHeader;
 

@@ -1,17 +1,9 @@
 <template>
     <section class="view home">
-        <!--<mobile-entry></mobile-entry>-->
-        <section class="cs:fwh mb:ct:vert" id="innov8-mobile">
-            <mobile-header class="cs:fw component"></mobile-header>
-                <transition-group
-                        id="nav-menu"
-                        name="mb-animation"
-                        v-bind:css="false"
-                        v-on:enter="enter"
-                        tag="section"
-                        class="mb:cs:fwh mb:ct:vert component">
-                    <nav-item v-for="item in navMenu" :key="item.id" :navItem="item"></nav-item>
-                </transition-group>
-        </section>
+        <!-- mobile section -->
+        <mobile-entry></mobile-entry>
+        <!-- End mobile section -->
+
+
     </section>
 </template>

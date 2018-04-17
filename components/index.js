@@ -1,12 +1,12 @@
 // Add all the components here for lazy loading
-import mbNavItem from './mb-nav-item/nav-item.js';
-import mobileHeader from './mb-header/mb-header.js'
+import mbNavMenu from './mb-nav-menu/mb-nav-menu.js';
+import mbNavItem from './mb-nav-item/mb-nav-item.js';
+import mobileHeader from './mb-header/mb-header';
 
-const components = {
-  mbNavItem,
-  mobileHeader,
-};
+// Not currently used. Import components from their relative dir
 
 export {
-  components
-};
+  mbNavMenu,
+  mbNavItem,
+  mobileHeader
+}

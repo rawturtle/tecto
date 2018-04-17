@@ -1,4 +1,4 @@
-import template from './nav-item.vue';
+import template from './mb-nav-item.vue';
 
 const mbNavItem = {
   name: 'mb-nav-item',

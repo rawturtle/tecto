@@ -14,9 +14,6 @@ const home = {
       }
     }
   },
-  components: {
-    TectoWelcome
-  },
   // extend the template file
   ...template
 };
