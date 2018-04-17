@@ -2602,6 +2602,10 @@ path.getTotalLength()
 }
 .component.home-page button {
   margin-left: 20px;
+  background-color: #07FFE7;
+  color: black;
+  font-size: 14px;
+  text-transform: capitalize;
 }
 .component.home-page #phoneImage {
   background: url("../../components/images/innov8-photos/phonescreen.png") no-repeat center;

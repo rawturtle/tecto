@@ -3,7 +3,6 @@
         <!-- mobile section -->
         <mobile-entry></mobile-entry>
         <!-- End mobile section -->
-
         <home-page></home-page>
 
     </section>
