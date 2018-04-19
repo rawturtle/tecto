@@ -1,6 +1,6 @@
 <template>
     <!-- Outer grid start-->
-    <section class="component home-desktop ct:vert cs:fwh mb:cv:hide">
+    <section class="home-desktop component ct:vert cs:fwh mb:cv:hide">
 
         <!-- banner and nav -->
         <app-header></app-header>
@@ -8,12 +8,12 @@
 
         <!-- Content -->
         <!-- Content Text & button-->
-        <section class="component home-page ct:hori cs:fw cs:6/8 pd:left:5">
+        <section class="home-page component ct:hori cs:fw cs:6/8 pd:left:5">
             <section class="cs:3/5 cs:fwh">
                 <section class="ct:hori cs:fwh ca:left">
                     <section class="cs:fw">
 
-                        <h1>Kiaora,</h1>
+                        <h1>Kia ora</h1>
                         <h3>Download our App to get all the benefits</h3>
                         <button>Click Here</button>
                     </section>
