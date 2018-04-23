@@ -1,0 +1,9 @@
+.component.welcome-desktop {
+  max-width: 1200px;
+  height: 100vh;
+  margin: 10px auto;
+}
+.video-wrapper {
+  background-image: url("../../components/images/innov8-photos/maori-pattern.png");
+}
+/*# sourceMappingURL=welcomepage.css.map */

@@ -1,30 +1,15 @@
 <template>
     <section class="view home">
-
-        <!-- mobile section -->
-        <mobile-entry></mobile-entry>
-        <!-- End mobile section -->
-
-        <!--<home-page></home-page>-->
-
-
-         <!--Welcome section start-->
-        <section style="height:100vh" class="welcome-desktop component ct:vert mb:cv:hide">
-
-            <section class="cs:1/8"><p>hey</p></section>
-                <section class="welcome-video cs:6/8 sp:4 ct:vert">
-                    <section class="video-wrapper cs:fwh ct:vert">
-                        <iframe  src="https://player.vimeo.com/video/64094840"
-                        width="100%" height="560" frameborder="0"
-                        webkitallowfullscreen
-                        mozallowfullscreen
-                        allowfullscreen>
-                        </iframe>
-                    </section>
-                </section>
-            <section class="cs:1/8"><p>Heya</p></section>
+        <section class="app-wrapper cs:fwh">
+            <!--When adding a new section give the outer container a height of 90vh. The header has a set height of 10vh-->
+            <!-- mobile section -->
+            <mobile-entry></mobile-entry>
+            <!-- End mobile section -->
+            <app-header></app-header>
+            <home-page></home-page>
+            <welcome-page></welcome-page>
         </section>
-         <!--End Welcome section>-->
+
 
     </section>
 </template>

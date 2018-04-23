@@ -1,12 +1,9 @@
 <template>
     <!-- Outer grid start-->
-    <section class="home-desktop component ct:vert cs:fwh mb:cv:hide">
+    <section id="home-section" class="home-desktop component ct:vert cs:fwh mb:cv:hide">
 
-        <!-- banner and nav -->
-        <app-header></app-header>
-        <!--End banner and nav row-->
+        <section class="ct:hori cs:fw cs:1/8"></section>
 
-        <!-- Content -->
         <!-- Content Text & button-->
         <section class="home-page component ct:hori cs:fw cs:6/8 pd:left:5">
             <section class="cs:3/5 cs:fwh">
@@ -36,7 +33,7 @@
         <!-- End Content -->
 
         <section class="ct:hori cs:fw cs:1/8">
-            <p>FOOTER</p>
+            <p>Something that can go here?</p>
         </section>
     </section>
     <!-- End outer grid -->
