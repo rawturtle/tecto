@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600?css');
+@import '~bulma/css/bulma.css';
 .ta\:left {
   text-align: left;
 }
@@ -2523,6 +2524,24 @@ body ::-webkit-scrollbar-thumb:hover {
 *[haiku-id="56b9c214aa43"] {
   fill: #181818;
 }
+.component.bookings-desktop {
+  height: 90vh;
+  margin: 10vh auto 0 auto;
+  max-width: 1200px;
+}
+.component.bookings-desktop .column {
+  background-color: red;
+}
+.component.bookings-desktop .contact-form {
+  box-sizing: border-box;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  background-color: #F9F9F9;
+  width: 100%;
+  height: 100%;
+  background: url("../../components/images/innov8-photos/map.png") center no-repeat;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
+}
 .component.item {
   text-align: center;
 }
@@ -2652,18 +2671,21 @@ body {
   max-width: 1200px;
 }
 .component.bookings-desktop .contact-form {
+  box-sizing: border-box;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   background-color: #F9F9F9;
-  max-width: 450px;
   width: 100%;
-  height: 90%;
-  padding: 25px;
+  height: 100%;
   background: url("../../components/images/innov8-photos/map.png") center no-repeat;
   background-color: rgba(255, 255, 255, 0.6);
   background-blend-mode: lighten;
 }
 .component.bookings-desktop .contact-form h3 {
   color: black;
+}
+.component.bookings-desktop .contact-form form {
+  padding: 15px;
+  max-width: 500px;
 }
 .component.bookings-desktop .contact-form fieldset {
   box-sizing: border-box;
@@ -2706,12 +2728,16 @@ body {
   border: 1px solid #aaa;
 }
 .component.bookings-desktop .contact-info {
-  margin: 10px;
+  box-sizing: border-box;
+  margin: 0 10px 0 10px;
+  padding: 0;
   background-color: #3f4555 ;
   border: 1px solid #3f4555;
+  width: 70%;
+  height: 100%;
 }
 .component.bookings-desktop .contact-details {
-  margin: 10px;
+  margin: 0 10px 0 10px;
   background-color: #3f4555 ;
   border: 1px solid #3f4555;
 }
@@ -2722,13 +2748,5 @@ body {
 }
 .video-wrapper {
   background-image: url("../../components/images/innov8-photos/maori-pattern.png");
-}
-@font-face {
-  font-family: 'Nexa Bold';
-  src: url("fonts/nexa/Nexa-Bold.otf");
-}
-@font-face {
-  font-family: 'Nexa Light';
-  src: url("fonts/nexa/Nexa-Light.otf");
 }
 /*# sourceMappingURL=main.css.map */
