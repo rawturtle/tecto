@@ -2582,6 +2582,9 @@ path.getTotalLength()
   min-height: 80px;
   background: black;
 }
+.component.navHeader a.active p {
+  text-decoration: underline !important;
+}
 .component.navHeader .banner {
   height: 30px;
   /*  get an image not sourced from a data stream */
@@ -2614,6 +2617,7 @@ body {
   background: linear-gradient(#03677E, #132632);
 }
 .component.home-desktop .home-page {
+  height: 90vh;
   max-width: 1200px;
 }
 .component.home-desktop .home-page h1 {
@@ -2641,6 +2645,75 @@ body {
 }
 .component.home-desktop .home-page #predator {
   background-color: #6b1b80;
+}
+.component.bookings-desktop {
+  height: 90vh;
+  margin: 10vh auto 0 auto;
+  max-width: 1200px;
+}
+.component.bookings-desktop .contact-form {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  background-color: #F9F9F9;
+  max-width: 450px;
+  width: 100%;
+  height: 90%;
+  padding: 25px;
+  background: url("../../components/images/innov8-photos/map.png") center no-repeat;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
+}
+.component.bookings-desktop .contact-form h3 {
+  color: black;
+}
+.component.bookings-desktop .contact-form fieldset {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 0;
+  border: 1px solid #ccc;
+}
+.component.bookings-desktop .contact-form fieldset input,
+.component.bookings-desktop .contact-form fieldset textarea,
+.component.bookings-desktop .contact-form fieldset button {
+  box-sizing: border-box;
+  min-width: 100%;
+  min-height: 45px;
+  padding: 0 0 0 10px;
+  margin: 0;
+}
+.component.bookings-desktop .contact-form fieldset textarea {
+  height: 90px;
+  min-height: 90px;
+  padding-top: 10px;
+}
+.component.bookings-desktop .contact-form fieldset .vdp-datepicker input {
+  width: 100%;
+  height: 45px;
+}
+.component.bookings-desktop .contact-form fieldset button {
+  background-color: #03677E;
+  color: #FFF;
+}
+.component.bookings-desktop .contact-form fieldset input:hover,
+.component.bookings-desktop .contact-form textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+.component.bookings-desktop .contact-form fieldset input:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+.component.bookings-desktop .contact-info {
+  margin: 10px;
+  background-color: #3f4555 ;
+  border: 1px solid #3f4555;
+}
+.component.bookings-desktop .contact-details {
+  margin: 10px;
+  background-color: #3f4555 ;
+  border: 1px solid #3f4555;
 }
 .component.welcome-desktop {
   max-width: 1200px;

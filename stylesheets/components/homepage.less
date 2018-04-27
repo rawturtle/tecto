@@ -5,6 +5,7 @@ body {
 }
 .component.home-desktop {
   .home-page {
+    height: 90vh;
     max-width: 1200px;
     h1 {
       margin: 0 10px 5px -5px;
@@ -35,5 +36,82 @@ body {
   }
 }
 
+.component.bookings-desktop {
+  height: 90vh;
+  margin: 10vh auto 0 auto;
+
+  max-width: 1200px;
+
+
+  .details {
+
+  }
+
+  .contact-form {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    background-color: #F9F9F9;
+    max-width: 450px;
+    width: 100%;
+    height: 90%;
+    padding: 25px;
+    background: url("../../components/images/innov8-photos/map.png") center no-repeat;
+    background-color: rgba(255,255,255,.6);
+    background-blend-mode: lighten;
+    h3 {
+      color: black;
+    }
+
+    fieldset {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0 0 10px;
+      padding: 0;
+      border: 1px solid #ccc;
+      input, textarea ,button {
+        box-sizing: border-box;
+        min-width: 100%;
+        min-height: 45px;
+        padding: 0 0 0 10px;
+        margin: 0;
+      }
+      textarea {
+        height: 90px;
+        min-height: 90px;
+        padding-top: 10px;
+      }
+      .vdp-datepicker input {
+        width: 100%;
+        height: 45px;
+      }
+      button {
+        background-color: #03677E;
+        color: #FFF;
+      }
+    }
+    fieldset input:hover, textarea:hover {
+      -webkit-transition: border-color 0.3s ease-in-out;
+      -moz-transition: border-color 0.3s ease-in-out;
+      transition: border-color 0.3s ease-in-out;
+      border: 1px solid #aaa;
+    }
+    fieldset input:focus {
+      outline: 0;
+      border: 1px solid #aaa;
+    }
+  }
+
+
+  .contact-info {
+    margin: 10px;
+    background-color: #3f4555 ;
+    border: 1px solid #3f4555;
+  }
+  .contact-details {
+    margin: 10px;
+    background-color: #3f4555 ;
+    border: 1px solid #3f4555;
+  }
+
+}
 
 

@@ -6,6 +6,9 @@ import { welcomePage } from '../../components/';
 import { header } from '../../components'
 import anime from 'animejs'
 
+import NoSSR from 'vue-no-ssr'
+import Datepicker from 'vuejs-datepicker'
+
 const squares = {
   name: 'squares',
   title: 'Innov8HQ',
@@ -14,6 +17,12 @@ const squares = {
   }],
   data() {
     return {
+      state: {
+        name: "",
+        email: "",
+        phone: "",
+        date: new Date(),
+      }
     }
   },
   components: {
@@ -21,6 +30,8 @@ const squares = {
     'home-page': homePage,
     'welcome-page': welcomePage,
     'app-header': header,
+    'no-ssr': NoSSR,
+    'datepicker': Datepicker,
   },
   ...template
 }
