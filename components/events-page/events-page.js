@@ -1,8 +1,15 @@
 import template from './events-page.vue';
+import Datepicker from 'vuejs-datepicker'
+import NoSSR from 'vue-no-ssr'
+
 
 const events = {
   name: 'event-page',
   methods: {
+  },
+  components: {
+    'no-ssr': NoSSR,
+    'datepicker': Datepicker,
   },
   data() {
     return {
@@ -13,6 +20,7 @@ const events = {
         date: new Date(),
         timeTo: "",
         timeFrom: "",
+        comments: "",
       }
     }
   },

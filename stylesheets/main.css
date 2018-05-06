@@ -2665,6 +2665,14 @@ body {
 .component.home-desktop .home-page #predator {
   background-color: #6b1b80;
 }
+.component.welcome-desktop {
+  max-width: 1200px;
+  height: 90vh;
+  margin: 10px auto 0 auto;
+}
+.video-wrapper {
+  background-image: url("../../components/images/innov8-photos/maori-pattern.png");
+}
 .component.bookings-desktop {
   height: 90vh;
   margin: 10vh auto 0 auto;
@@ -2715,6 +2723,7 @@ body {
   flex-wrap: nowrap;
 }
 .component.bookings-desktop .contact-form .datetime-wrapper .wrap .time {
+  box-sizing: border-box;
   border: 1px solid #ccc;
   height: 45px;
   padding: 0 0 0 10px;
@@ -2735,18 +2744,18 @@ body {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
-  border: 1px solid #aaa;
+  border: 1px solid #aaa!important;
 }
 .component.bookings-desktop .contact-form .item-wrapper input:focus,
 .component.bookings-desktop .contact-form .time input:focus,
 .component.bookings-desktop .contact-form .vdp-datepicker input:focus {
   outline: 0;
-  border: 1px solid #aaa;
+  border: 1px solid #aaa!important;
 }
 .component.bookings-desktop .contact-info {
   box-sizing: border-box;
   margin: 10px 0 10px 45px;
-  padding: 0;
+  padding: 10px;
   background-color: #3f4555 ;
   border: 1px solid #3f4555;
   width: 100%;
@@ -2754,18 +2763,5 @@ body {
 }
 .component.bookings-desktop .contact-info p {
   margin: auto 15px;
-}
-.component.bookings-desktop .contact-details {
-  margin: 0 10px 0 10px;
-  background-color: #3f4555 ;
-  border: 1px solid #3f4555;
-}
-.component.welcome-desktop {
-  max-width: 1200px;
-  height: 90vh;
-  margin: 10px auto 0 auto;
-}
-.video-wrapper {
-  background-image: url("../../components/images/innov8-photos/maori-pattern.png");
 }
 /*# sourceMappingURL=main.css.map */

@@ -24,13 +24,13 @@
                             <no-ssr>
                                 <datepicker v-model="state.date" id="datepicker" tabindex="4"></datepicker>
                             </no-ssr>
-                            <input v-model="state.timeFrom" class="time" type="text" placeholder="From">
-                            <input v-model="state.timeTo" class="time" type="text" placeholder="To">
+                            <input v-model="state.timeFrom" class="time" type="text" tabindex="5" placeholder="From">
+                            <input v-model="state.timeTo" class="time" type="text" tabindex="6" placeholder="To">
                         </div>
                     </div>
 
                     <div class="item-wrapper">
-                        <textarea placeholder="Additional comments" tabindex="5"></textarea>
+                        <textarea v-model="state.comments" placeholder="Additional comments" tabindex="7"></textarea>
                     </div>
 
                     <div class="item-wrapper">
@@ -66,7 +66,7 @@
 
                 <section class="cs:gutter"></section>
 
-                <section class="cs:1/3 ct:vert">
+                <section class="contact-wrapper cs:1/3 ct:vert">
                     <section class="contact-info ct:vert">
                         <p>We are in the process of implementing a fully automated booking system so beer with us.
                         </p>
