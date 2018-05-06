@@ -3,7 +3,8 @@ import { mbNavMenu } from '../../components/';
 import { mbHeader } from '../../components/';
 import { homePage } from '../../components/';
 import { welcomePage } from '../../components/';
-import { header } from '../../components'
+import { header } from '../../components';
+import { events } from '../../components'
 import anime from 'animejs'
 
 import NoSSR from 'vue-no-ssr'
@@ -15,20 +16,11 @@ const squares = {
   metadata: [{
     name: 'squares'
   }],
-  data() {
-    return {
-      state: {
-        name: "",
-        email: "",
-        phone: "",
-        date: new Date(),
-      }
-    }
-  },
   components: {
     'mobile-entry': mbNavMenu,
     'home-page': homePage,
     'welcome-page': welcomePage,
+    'events-page': events,
     'app-header': header,
     'no-ssr': NoSSR,
     'datepicker': Datepicker,

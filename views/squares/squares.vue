@@ -8,85 +8,8 @@
             <app-header></app-header>
             <!--<home-page></home-page>-->
             <!--<welcome-page></welcome-page>-->
+            <events-page></events-page>
 
-            <section id="bookings-section" class="bookings-desktop component ct:hori cs:fwh mb:cv:hide">
-                <section class="ct:vert cs:1/2 cs:fwh">
-                    <section class="cs:1/8 cs:fw"></section>
-                    <section class="cs:6/8 cs:fwh ct:hori contact-form">
-                        <form>
-                            <h3>Want to host an event?</h3>
-                            <h4>Innov8HQ has all the facilities you need. Send Heidi a message by filling out the form below</h4>
-
-                            <fieldset>
-                                <input v-model="state.name" type="text" id="name" placeholder="Name" tabindex="1" required>
-                            </fieldset>
-
-                            <fieldset>
-                                <input v-model="state.email" type="email" id="email" placeholder="Email" tabindex="2" required>
-                            </fieldset>
-
-                            <fieldset>
-                                <input v-model="state.phone" type="text" id="phone" placeholder="Phone Number (Optional)" tabindex="3">
-                            </fieldset>
-
-                            <fieldset>
-                                <no-ssr>
-                                    <datepicker v-model="state.date" id="datepicker" tabindex="4"></datepicker>
-                                </no-ssr>
-                            </fieldset>
-
-
-                            <fieldset>
-                                <textarea placeholder="Additional comments" tabindex="5"></textarea>
-                            </fieldset>
-
-                            <fieldset>
-                                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                            </fieldset>
-                            <!--<p>{{ state.name }}</p>-->
-                            <!--<p>{{ state.email }}</p>-->
-                            <!--<p>{{ state.phone }}</p>-->
-                            <!--<p>{{ state.date }}</p>-->
-                        </form>
-                    </section>
-                    <section class="cs:1/8 cs:fw"></section>
-                </section>
-
-                <section class="details ct:vert cs:1/2 cs:fwh">
-                    <section class="cs:1/8 cs:fw"></section>
-
-                    <section class="cs:6/8 ct:vert">
-
-                        <section class="cs:1/3 ct:vert">
-                            <section class="contact-info">
-                                <p>We are in the process of implementing a fully automated booking system so bear with us.
-                                </p>
-                                <p>In the meantime use the form and Heidi will get back to you or call her directly</p>
-                            </section>
-                        </section>
-                        <section class="cs:gutter"></section>
-                        <section class="cs:1/3 ct:vert">
-                            <section class="contact-info">
-                                <p>We are in the process of implementing a fully automated booking system so bear with us.
-                                </p>
-                                <p>In the meantime use the form and Heidi will get back to you or call her directly</p>
-                            </section>
-                        </section>
-                        <section class="cs:gutter"></section>
-
-                        <section class="cs:1/3 ct:vert">
-                            <section class="contact-info">
-                                <p>We are in the process of implementing a fully automated booking system so bear with us.
-                                </p>
-                                <p>In the meantime use the form and Heidi will get back to you or call her directly</p>
-                            </section>
-                        </section>
-
-                    </section>
-                    <section class="cs:1/8 cs:fw"></section>
-                </section>
-
-            </section>
         </section>
     </section>
 </template>

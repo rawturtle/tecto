@@ -3,8 +3,9 @@ import mbNavMenu from './mb-nav-menu/mb-nav-menu.js';
 import mbNavItem from './mb-nav-item/mb-nav-item.js';
 import mbHeader from './mb-header/mb-header';
 import homePage from './home-page/home-page';
-import header from './header/header'
-import welcomePage from './welcome-page/welcome-page'
+import header from './header/header';
+import welcomePage from './welcome-page/welcome-page';
+import events from './events-page/events-page';
 // Not currently used. Import components from their relative dir
 
 export {
@@ -14,4 +15,6 @@ export {
   homePage,
   header,
   welcomePage,
+  events,
+
 }
